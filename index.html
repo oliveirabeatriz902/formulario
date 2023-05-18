@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <style>
+        * {
+            font-family: Comic Sans MS;
+            font-size: 20px;
+            background-color: rgb(78, 78, 78);
+            color: azure;
+        }
+
+        fieldset {
+            width: 50%;
+            margin: 4% auto;
+            border-radius: 20px;
+        }
+
+        legend {
+            text-align: center;
+            margin-bottom: 7%;
+            color: aqua;
+        }
+
+        p {
+            font-size: 22px;
+            color: orange;
+        }
+
+        #conteudo {
+            font-size: 24px;
+            text-align: center;
+            margin-top: 8%;
+            color: aliceblue;
+        }
+
+        .dadosPessoais {
+            color: orange;
+            font-weight: bold;
+        }
+
+        .linguagemProgramacao {
+            margin-left: 1%;
+        }
+
+        button {
+            float: right;
+            width: 150px;
+            padding: 10px;
+            background-color: orange;
+            color: black;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+        button:hover {
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="div1">
+        <form>
+            <fieldset>
+                <legend><b>Formulário</b></legend>
+
+                <label class="dadosPessoais">Nome: <input type="text" id="nome" name="nome"
+                        placeholder="Digite seu nome completo" required=""></label>
+                <br><br>
+                <label class="dadosPessoais">Idade: <input type="number" id="idade" name="idade"
+                        placeholder="Digite sua idade" min="0" required=""></label>
+                <br><br>
+
+                <label class="dadosPessoais">Data de nascimento: <input type="date" required=""></label>
+
+                <p>Estado de origem:</p>
+                <select name="estado" required="">
+                    <option selected="" value="">Selecione o Estado (UF)</option>
+                    <option value="Acre">Acre</option>
+                    <option value="Alagoas">Alagoas</option>
+                    <option value="Amapá">Amapá</option>
+                    <option value="Amazonas">Amazonas</option>
+                    <option value="Bahia">Bahia</option>
+                    <option value="Ceará">Ceará</option>
+                    <option value="Distrito Federal">Distrito Federal</option>
+                    <option value="Espírito Santo">Espírito Santo</option>
+                    <option value="Goiás">Goiás</option>
+                    <option value="Maranhão">Maranhão</option>
+                    <option value="Mato Grosso">Mato Grosso</option>
+                    <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                    <option value="Minas Gerais">Minas Gerais</option>
+                    <option value="Pará">Pará</option>
+                    <option value="Paraíba">Paraíba</option>
+                    <option value="Paraná">Paraná</option>
+                    <option value="Pernambuco">Pernambuco</option>
+                    <option value="Piauí">Piauí</option>
+                    <option value="Rio de Janeiro">Rio de Janeiro</option>
+                    <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                    <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                    <option value="Rondônia">Rondônia</option>
+                    <option value="Roraima">Roraima</option>
+                    <option value="Santa Catarina">Santa Catarina</option>
+                    <option value="São Paulo">São Paulo</option>
+                    <option value="Sergipe">Sergipe</option>
+                    <option value="Tocantins">Tocantins</option>
+                </select>
+
+                <p>Gênero</p>
+
+                <select name="genero" required="">
+                    <option value="">Selecione seu gênero</option>
+                    <option value="mulherCis">Mulher cisgênero</option>
+                    <option value="mulherTrans">Mulher transgênero</option>
+                    <option value="homemCis">Homem cisgênero</option>
+                    <option value="homemTrans">Homem transgênero</option>
+                    <option value="naoBinario">Não binário</option>
+                    <option value="naoInformar">Prefiro não informar</option>
+                </select>
+
+                <p>Selecione quais linguagens de programação deseja aprender:</p>
+
+                <label for="js" class="linguagemProgramacao"><input type="checkbox" name="js">JavaScript</label>
+                <label for="python" class="linguagemProgramacao"><input type="checkbox" name="python">Python</label>
+                <label for="R" class="linguagemProgramacao"><input type="checkbox" name="R">R</label>
+                <label for="java" class="linguagemProgramacao"><input type="checkbox" name="java">Java</label>
+                <br><br><br>
+
+                <button id="btn" type="submit">Enviar</button>
+                <p id="conteudo"></p>
+
+            </fieldset>
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>
